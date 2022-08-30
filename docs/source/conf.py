@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'maya_exp_imp_tool'
+copyright = '2022, Bickhsu'
+author = 'Bickhsu'
 
 release = '0.1'
 version = '0.1.0'
