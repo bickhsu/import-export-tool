@@ -1,0 +1,21 @@
+//BICK Export Import Tool
+
+[ISubPalette,"Zplugin:BH Exp/Imp Tool"]
+
+[IButton,"Zplugin:BH Exp/Imp Tool:exp","export current subtool to temp folder",
+[FileNameSetNext,"C:\temp\temp_mesh.obj"][FileNameSetNext,"C:\temp\temp_mesh.obj"][IPress,Tool:Export]
+]
+
+[IButton,"Zplugin:BH Exp/Imp Tool:imp","import the temp_mesh to current subtool.",
+[FileNameSetNext,"C:\temp\temp_mesh.obj"][IPress,Tool:Import]
+[IPress,Tool:Display Properties:Double]
+]
+
+[IButton,"Zplugin:BH Exp/Imp Tool:imp to new","import the temp_mesh to new subtool..",
+[IPress,Tool:SubTool:Append]
+[IPress,PopUp:PolyMesh3D]
+[IKeyPress,SHIFT,[IPress,Tool:SubTool:SelectDown]]
+[FileNameSetNext,"C:\temp\temp_mesh.obj"][IPress,Tool:Import]
+[IPress,Tool:Display Properties:Double]
+]
+
